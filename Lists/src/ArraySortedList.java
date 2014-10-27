@@ -33,6 +33,7 @@ public class ArraySortedList<T> extends ArrayUnsortedList<T> implements ListInte
 	public boolean remove(T element){
 		find(element);
 		if(found){
+			//hi
 			for(int i = location;i<=numElements - 2; i++)
 				list[i] = list[i+1];
 			list[numElements -1 ] = null;
